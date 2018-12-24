@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-picture-with-caption',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./picture-with-caption.component.css']
 })
 export class PictureWithCaptionComponent implements OnInit {
+  @Input() imageUrl: string;
+  @Input() imageAlt: string = 'An image';
+  @Input() caption: string = '';
 
   constructor() { }
 
