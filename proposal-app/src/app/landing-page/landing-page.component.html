@@ -1,4 +1,7 @@
+<app-main-header [options]="landingHeaderOptions"></app-main-header>
+
 <app-left-picture-panel
+  *ngFor="let i of [0, 1, 2]"
   [imageUrl]="'../assets/images/taylor.jpg'"
   [imageAlt]="'A cutie'"
   [imageCaption]="'This girl pretty cool.'"

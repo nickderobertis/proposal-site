@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { HeaderOptions } from '../custom-material-module/main-header/main-header.component';
+import { landingHeaderOptions } from './header-links';
 
 @Component({
   selector: 'app-landing-page',
@@ -6,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
-
+  landingHeaderOptions: HeaderOptions = landingHeaderOptions;
   constructor() { }
 
   ngOnInit() {

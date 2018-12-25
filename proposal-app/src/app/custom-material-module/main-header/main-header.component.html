@@ -1,0 +1,9 @@
+<mat-toolbar color="primary" class="fixed-at-top">
+  <mat-toolbar-row>
+    <span class="header-spacer"></span>
+    <ng-container *ngFor="let navItem of options.navItems">
+      <span>{{navItem.displayStr}}</span>
+      <span class="header-spacer"></span>
+    </ng-container>
+  </mat-toolbar-row>
+</mat-toolbar>
