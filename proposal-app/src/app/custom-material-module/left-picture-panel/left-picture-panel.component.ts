@@ -9,6 +9,7 @@ export class LeftPicturePanelComponent implements OnInit {
   @Input() imageUrl: string;
   @Input() imageAlt: string = 'An image';
   @Input() imageCaption: string = '';
+  @Input() backgroundColor: string = 'none';
 
   constructor() { }
 

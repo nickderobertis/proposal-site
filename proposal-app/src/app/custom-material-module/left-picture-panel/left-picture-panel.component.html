@@ -1,14 +1,18 @@
-<mat-grid-list cols="3" rowHeight="400px">
+<mat-grid-list
+  cols="3"
+  rowHeight="400px"
+  [style.background]="backgroundColor"
+>
   <mat-grid-tile
     [colspan]=2
     [rowspan]=1
-    [style.background]="'lightblue'">
+    >
     <ng-content></ng-content>
   </mat-grid-tile>
   <mat-grid-tile
     [colspan]=1
     [rowspan]=1
-    [style.background]="'lightgreen'">
+    >
     <app-picture-with-caption
       [imageUrl]="imageUrl"
       [imageAlt]="imageAlt"
