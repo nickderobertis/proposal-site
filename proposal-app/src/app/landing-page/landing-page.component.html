@@ -1,7 +1,36 @@
 <app-main-header [options]="landingHeaderOptions"></app-main-header>
 
 <app-left-picture-panel
-  *ngFor="let i of [0, 1, 2]"
+  [imageUrl]="'../assets/images/taylor.jpg'"
+  [imageAlt]="'A cutie'"
+  [imageCaption]="'This girl pretty cool.'"
+>
+  <p>Some text I added.</p>
+</app-left-picture-panel>
+
+<app-title-panel [titleText]="'A title'"></app-title-panel>
+
+<app-left-picture-panel
+  [imageUrl]="'../assets/images/taylor.jpg'"
+  [imageAlt]="'A cutie'"
+  [imageCaption]="'This girl pretty cool.'"
+>
+  <p>Some text I added.</p>
+</app-left-picture-panel>
+
+<app-title-panel [titleText]="'A title'"></app-title-panel>
+
+<app-left-picture-panel
+  [imageUrl]="'../assets/images/taylor.jpg'"
+  [imageAlt]="'A cutie'"
+  [imageCaption]="'This girl pretty cool.'"
+>
+  <p>Some text I added.</p>
+</app-left-picture-panel>
+
+<app-title-panel [titleText]="'A title'"></app-title-panel>
+
+<app-left-picture-panel
   [imageUrl]="'../assets/images/taylor.jpg'"
   [imageAlt]="'A cutie'"
   [imageCaption]="'This girl pretty cool.'"
