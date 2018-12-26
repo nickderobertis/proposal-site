@@ -2,7 +2,7 @@
   <mat-toolbar-row>
     <span class="header-spacer"></span>
     <ng-container *ngFor="let navItem of options.navItems">
-      <span>{{navItem.displayStr}}</span>
+      <a href="{{ navItem.pageRef }}">{{navItem.displayStr}}</a>
       <span class="header-spacer"></span>
     </ng-container>
   </mat-toolbar-row>
