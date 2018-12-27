@@ -1,16 +1,31 @@
 <mat-grid-list
-  cols="3"
+  [cols]="numCols"
   rowHeight="400px"
   [style.background]="backgroundColor"
 >
-  <mat-grid-tile
-    [colspan]=2
+  <mat-grid-tile *ngIf="shouldDisplayPadding"
+                 [colspan]="1"
+                 [rowspan]=1
+  >
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="shouldDisplayLeftPicture"
+    [colspan]="numPictureCols"
+    [rowspan]=1
+  >
+    <app-picture-with-caption
+      [imageUrl]="imageUrl"
+      [imageAlt]="imageAlt"
+      [caption]="imageCaption"
+    ></app-picture-with-caption>
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="shouldDisplayInputArea"
+    [colspan]="numTextCols"
     [rowspan]=1
     >
     <ng-content></ng-content>
   </mat-grid-tile>
-  <mat-grid-tile
-    [colspan]=1
+  <mat-grid-tile *ngIf="shouldDisplayRightPicture"
+    [colspan]="numPictureCols"
     [rowspan]=1
     >
     <app-picture-with-caption
@@ -18,6 +33,11 @@
       [imageAlt]="imageAlt"
       [caption]="imageCaption"
     ></app-picture-with-caption>
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="shouldDisplayPadding"
+                 [colspan]="1"
+                 [rowspan]=1
+  >
   </mat-grid-tile>
 </mat-grid-list>
 
