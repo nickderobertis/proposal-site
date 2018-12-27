@@ -1,0 +1,11 @@
+.main-banner-container {
+  background-size: cover;
+  min-height: 750px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-banner-title {
+  font-size: 4em;
+}
