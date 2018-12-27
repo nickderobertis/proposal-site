@@ -15,4 +15,8 @@ export class PictureWithCaptionComponent implements OnInit {
   ngOnInit() {
   }
 
+  get shouldDisplayCaption() {
+    return this.caption != '';
+  }
+
 }
