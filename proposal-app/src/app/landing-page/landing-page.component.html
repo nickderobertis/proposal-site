@@ -126,6 +126,12 @@
 
 <app-title-panel titleText="The Question" id="ask"></app-title-panel>
 
-<app-audio-widget
-  source="assets/audio/marisol.ogg"
-></app-audio-widget>
+<div
+  class="proposal-audio-container"
+  [style.background-image]="'url(assets/images/proposal-background.jpg)'"
+>
+  <app-audio-widget class="proposal-audio"
+                    source="assets/audio/marisol.ogg"
+  ></app-audio-widget>
+</div>
+
