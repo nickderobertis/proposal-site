@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { LeftPicturePanelComponent } from './left-picture-panel.component';
+import { PicturePanelComponent } from './picture-panel.component';
 
-describe('LeftPicturePanelComponent', () => {
-  let component: LeftPicturePanelComponent;
-  let fixture: ComponentFixture<LeftPicturePanelComponent>;
+describe('PicturePanelComponent', () => {
+  let component: PicturePanelComponent;
+  let fixture: ComponentFixture<PicturePanelComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LeftPicturePanelComponent ]
+      declarations: [ PicturePanelComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(LeftPicturePanelComponent);
+    fixture = TestBed.createComponent(PicturePanelComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

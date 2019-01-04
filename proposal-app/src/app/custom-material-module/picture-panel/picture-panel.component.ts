@@ -1,11 +1,11 @@
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-left-picture-panel',
-  templateUrl: './left-picture-panel.component.html',
-  styleUrls: ['./left-picture-panel.component.css']
+  selector: 'app-picture-panel',
+  templateUrl: './picture-panel.component.html',
+  styleUrls: ['./picture-panel.component.css']
 })
-export class LeftPicturePanelComponent implements OnInit {
+export class PicturePanelComponent implements OnInit {
   @Input() imageUrl: string;
   @Input() imageAlt: string = 'An image';
   @Input() imageCaption: string = '';

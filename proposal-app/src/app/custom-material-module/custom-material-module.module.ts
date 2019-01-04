@@ -4,11 +4,11 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatCardModule } from '@angular/material/card';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { PictureWithCaptionComponent } from './picture-with-caption/picture-with-caption.component';
-import { LeftPicturePanelComponent } from './left-picture-panel/left-picture-panel.component';
+import { PicturePanelComponent } from './picture-panel/picture-panel.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
 
 @NgModule({
-  declarations: [PictureWithCaptionComponent, LeftPicturePanelComponent, MainHeaderComponent],
+  declarations: [PictureWithCaptionComponent, PicturePanelComponent, MainHeaderComponent],
   imports: [
     CommonModule,
     MatGridListModule,
@@ -16,7 +16,7 @@ import { MainHeaderComponent } from './main-header/main-header.component';
     MatToolbarModule
   ],
   exports: [
-    LeftPicturePanelComponent,
+    PicturePanelComponent,
     PictureWithCaptionComponent,
     MainHeaderComponent
   ]
