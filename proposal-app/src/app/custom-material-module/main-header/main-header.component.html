@@ -1,8 +1,8 @@
-<mat-toolbar color="primary" class="fixed-at-top">
+<mat-toolbar color="primary" class="fixed-at-top header-body">
   <mat-toolbar-row>
     <span class="header-spacer"></span>
     <ng-container *ngFor="let navItem of options.navItems">
-      <a href="{{ navItem.pageRef }}">{{navItem.displayStr}}</a>
+      <a class="header-link" href="{{ navItem.pageRef }}">{{navItem.displayStr}}</a>
       <span class="header-spacer"></span>
     </ng-container>
   </mat-toolbar-row>
