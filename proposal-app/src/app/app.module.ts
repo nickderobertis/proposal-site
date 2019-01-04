@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CustomMaterialModuleModule } from './custom-material-module/custom-material-module.module';
 import { LandingPageComponent } from './landing-page/landing-page.component'
 import { GeneralComponentsModule } from './general-components/general-components.module';
+import { GlobalDirectivesModule } from './global/global-directives/global-directives.module';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GeneralComponentsModule } from './general-components/general-components
     BrowserModule,
     BrowserAnimationsModule,
     CustomMaterialModuleModule,
-    GeneralComponentsModule
+    GeneralComponentsModule,
+    GlobalDirectivesModule
   ],
   providers: [],
   bootstrap: [AppComponent]
