@@ -10,6 +10,9 @@
 
 .main-banner-title {
   font-size: 4em;
+  color: white;
+  text-shadow: 3px 2px darkslategray;
+  text-align: center;
 }
 
 .main-banner-position-block {
