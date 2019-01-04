@@ -11,6 +11,7 @@ export class PicturePanelComponent implements OnInit {
   @Input() imageCaption: string = '';
   @Input() backgroundColor: string = 'none';
   @Input() picturePosition: string = 'right';
+  @Input() imgCardStyles: object = {};
 
   constructor() { }
 
