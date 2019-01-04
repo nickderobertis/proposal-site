@@ -1,5 +1,4 @@
-<mat-card class="image-card">
-  <img mat-card-image [src]="imageUrl" [alt]="imageAlt">
+<mat-card class="image-card" [style.background-image]="cssImageUrl">
   <mat-card-content *ngIf="shouldDisplayCaption">
     <p>
       {{caption}}

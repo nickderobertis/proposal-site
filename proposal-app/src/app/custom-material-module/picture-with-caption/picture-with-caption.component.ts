@@ -19,4 +19,8 @@ export class PictureWithCaptionComponent implements OnInit {
     return this.caption != '';
   }
 
+  get cssImageUrl() {
+    return `url(${this.imageUrl})`
+  }
+
 }
