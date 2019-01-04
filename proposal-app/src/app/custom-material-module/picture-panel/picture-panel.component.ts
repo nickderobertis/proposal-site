@@ -34,24 +34,24 @@ export class PicturePanelComponent implements OnInit {
   }
 
   get numCols(): number {
-    if (!this.shouldDisplayInputArea) {
-      // Centered, no text area, make picture bigger
-      return 5;
+    if (this.shouldDisplayInputArea) {
+      // four sevenths for text, three sevenths for picture
+      return 7;
     }
     else {
-      // Two thirds for text area, one third for picture
-      return 3;
+      // Centered, no text area, make picture bigger
+      return 5;
     }
   }
 
   get numPictureCols(): number {
-    if (!this.shouldDisplayInputArea) {
-      // Centered, no text area, make picture bigger
+    if (this.shouldDisplayInputArea) {
+      // four sevenths for text, three sevenths for picture
       return 3;
     }
     else {
-      // Two thirds for text area, one third for picture
-      return 1;
+      // Centered, no text area, make picture bigger
+      return 3;
     }
   }
 
