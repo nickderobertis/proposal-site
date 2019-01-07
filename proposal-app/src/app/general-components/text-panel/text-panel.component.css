@@ -1,0 +1,29 @@
+
+.text-container {
+  width: 100%;
+  background-color: #003809;
+}
+
+.text-para {
+  font-size: 2em;
+  line-height: 1.75em;
+  padding: 100px;
+  color: white;
+  margin: 0;
+}
+
+@media only screen and (max-width: 850px) {
+  .text-para {
+    padding: 70px;
+    font-size: 1.75em;
+    line-height: 1.5em;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .text-para {
+    padding: 40px;
+    font-size: 1.5em;
+    line-height: 1.35em;
+  }
+}
