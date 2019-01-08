@@ -1,15 +1,21 @@
 
 .text-container {
   width: 100%;
-  background-color: #003809;
+  background-color: rgba(0, 56, 9, 0.8);
 }
 
 .text-para {
   font-size: 2em;
   line-height: 1.75em;
+  text-align: center;
   padding: 100px;
   color: white;
   margin: 0;
+}
+
+.image-container {
+  background-position: center center;
+  background-size: cover;
 }
 
 @media only screen and (max-width: 850px) {
