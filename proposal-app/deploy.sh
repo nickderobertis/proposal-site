@@ -11,6 +11,7 @@ EMAIL_OF_USER="whoopnip@gmail.com";
 echo "Building application with Angular CLI for URL $BASE_HREF";
 ng build --prod --base-href $BASE_HREF;
 
+echo "Publishing Github Pages at repo $REPO_HREF";
 npx angular-cli-ghpages \
   --dir=$PROJECT_DIR \
   --message "$COMMIT_MESSAGE" \
