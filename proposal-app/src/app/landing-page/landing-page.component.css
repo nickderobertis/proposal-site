@@ -9,7 +9,8 @@
 .proposal-audio-container {
   background-size: cover;
   background-position: center;
-  height: 600px;
+  background-attachment: fixed;
+  height: 900px;
   display: flex;
   justify-content: center;
   align-items: center;
