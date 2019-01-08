@@ -20,11 +20,9 @@ export class MainHeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.options);
     if (typeof this.options === "undefined") {
       this.options = {navItems: []};
     }
-    console.log(this.options);
   }
 
 }
