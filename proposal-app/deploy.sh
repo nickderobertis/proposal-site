@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-BASE_HREF="https://whoopnip.github.io/proposal-site/";
-GH_TOKEN="0385570948a8ac00ddd02ebb9f2275a237828d03";
+BASE_HREF="http://taylorandnicklove.com/";
+GH_TOKEN="f3219ee44fac87ba22288b4b17b667ec097c0295";
 PROJECT_DIR="dist/proposal-app";
 COMMIT_MESSAGE="Deployment commit at $(date)";
 REPO_HREF="https://$GH_TOKEN@github.com/whoopnip/proposal-site.git";
