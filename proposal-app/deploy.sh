@@ -1,13 +1,10 @@
 #!/usr/bin/env bash
 
-ROOT_URL="taylorandnicklove.com";
+source ./env.sh;
+
 BASE_HREF="http://$ROOT_URL/";
-GH_TOKEN="fd24341241e9632080376b9d9d776c419fbf9cb9";
-PROJECT_DIR="dist/proposal-app";
 COMMIT_MESSAGE="Deployment commit at $(date)";
-REPO_HREF="https://$GH_TOKEN@github.com/whoopnip/proposal-site.git";
-NAME_OF_USER="Nick DeRobertis";
-EMAIL_OF_USER="whoopnip@gmail.com";
+REPO_HREF="https://$GH_TOKEN@$REPO_URL.git";
 
 echo "Building application with Angular CLI for URL $BASE_HREF";
 ng build --prod --base-href $BASE_HREF;
