@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-BASE_HREF="http://taylorandnicklove.com/";
-GH_TOKEN="f3219ee44fac87ba22288b4b17b667ec097c0295";
+ROOT_URL="taylorandnicklove.com";
+BASE_HREF="http://$ROOT_URL/";
+GH_TOKEN="fd24341241e9632080376b9d9d776c419fbf9cb9";
 PROJECT_DIR="dist/proposal-app";
 COMMIT_MESSAGE="Deployment commit at $(date)";
 REPO_HREF="https://$GH_TOKEN@github.com/whoopnip/proposal-site.git";
@@ -18,4 +19,5 @@ npx angular-cli-ghpages \
   --repo "$REPO_HREF" \
   --name "$NAME_OF_USER" \
   --email "$EMAIL_OF_USER" \
+  --cname $ROOT_URL \
   --no-silent;
