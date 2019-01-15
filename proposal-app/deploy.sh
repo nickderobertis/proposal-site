@@ -2,7 +2,7 @@
 
 source ./env.sh;
 
-BASE_HREF="http://$ROOT_URL/";
+BASE_HREF="https://$ROOT_URL/";
 COMMIT_MESSAGE="Deployment commit at $(date)";
 REPO_HREF="https://$GH_TOKEN@$REPO_URL.git";
 
