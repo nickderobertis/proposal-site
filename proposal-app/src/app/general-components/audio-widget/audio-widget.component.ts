@@ -10,7 +10,7 @@ export class AudioWidgetComponent implements OnInit, OnChanges {
   @Input() source: string = '';
   @Input() autoplay: boolean = false;
   private startAudio: boolean = false;
-  private shouldExist: boolean = false;
+  public shouldExist: boolean = false;
 
   constructor(
     private el: ElementRef,
