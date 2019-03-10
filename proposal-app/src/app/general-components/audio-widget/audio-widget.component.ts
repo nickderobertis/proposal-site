@@ -1,4 +1,5 @@
 import { Component, OnInit, OnChanges, Input, ElementRef, NgZone, ChangeDetectorRef } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-audio-widget',
@@ -9,18 +10,25 @@ export class AudioWidgetComponent implements OnInit, OnChanges {
   @Input() source: string = '';
   @Input() autoplay: boolean = false;
   private startAudio: boolean = false;
-  private shouldExist: boolean;
+  private shouldExist: boolean = false;
 
   constructor(
     private el: ElementRef,
     private ngZone: NgZone,
-    private changeDetector: ChangeDetectorRef
+    private changeDetector: ChangeDetectorRef,
+    private route: ActivatedRoute
   ) { }
 
   ngOnInit() {
+    this.route.queryParams
+      .subscribe(params => {
+        this.autoplay = (params.autoplay == 'true');
+        this.shouldExist = !this.autoplay;
+      });
     this.ngZone.runOutsideAngular(() => {
       window.addEventListener('scroll', this.onScroll, <any>{capture: true, passive: true});
     });
+
   }
 
   ngOnChanges() {
