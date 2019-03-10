@@ -1,4 +1,5 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { HeaderOptions } from '../custom-material-module/main-header/main-header.component';
 import { landingHeaderOptions } from './header-links';
 
@@ -10,10 +11,17 @@ import { landingHeaderOptions } from './header-links';
 export class LandingPageComponent implements OnInit {
   landingHeaderOptions: HeaderOptions = landingHeaderOptions;
   windowWidth: number;
-  constructor() { }
+  autoplaySong: boolean = false;
+  constructor(
+    private route: ActivatedRoute
+  ) { }
 
   ngOnInit() {
     this.windowWidth = window.innerWidth || document.body.clientWidth;
+    this.route.queryParams
+      .subscribe(params => {
+        this.autoplaySong = (params.autoplay == 'true');
+      });
   }
 
   @HostListener('window:resize', ['$event'])

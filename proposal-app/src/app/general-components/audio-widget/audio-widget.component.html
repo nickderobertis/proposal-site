@@ -1,4 +1,8 @@
-<audio controls>
+<audio
+  *ngIf="shouldExist"
+  [controls]="!autoplay"
+  [autoplay]="autoplay"
+>
   <source [src]="source" [type]="sourceType">
 
   Your browser doesn't support HTML5 audio. Get a better browser!
