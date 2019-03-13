@@ -1,0 +1,19 @@
+
+.play-button {
+  height: 30px;
+  width: 30px;
+  position: fixed;
+  top: 15px;
+  left: 10px;
+  opacity: 0.1;
+}
+
+.play-button:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 400px) {
+  .play-button {
+    display: none;
+  }
+}

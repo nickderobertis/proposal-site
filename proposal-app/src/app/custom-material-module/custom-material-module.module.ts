@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { PictureWithCaptionComponent } from './picture-with-caption/picture-with-caption.component';
 import { PicturePanelComponent } from './picture-panel/picture-panel.component';
 import { MainHeaderComponent } from './main-header/main-header.component';
+import { GeneralComponentsModule } from '../general-components/general-components.module';
 
 @NgModule({
   declarations: [PictureWithCaptionComponent, PicturePanelComponent, MainHeaderComponent],
@@ -13,7 +14,8 @@ import { MainHeaderComponent } from './main-header/main-header.component';
     CommonModule,
     MatGridListModule,
     MatCardModule,
-    MatToolbarModule
+    MatToolbarModule,
+    GeneralComponentsModule,
   ],
   exports: [
     PicturePanelComponent,
